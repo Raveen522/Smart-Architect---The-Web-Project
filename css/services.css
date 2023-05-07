@@ -1,0 +1,376 @@
+main{
+    opacity: 0;
+    animation: page-fadeIn 2.2s ease forwards;
+}
+
+@keyframes page-fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.header{
+    width: 100%;
+    height: 750px;
+    position: relative;
+    border-bottom: white solid 2px;
+}
+.header-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+}
+.header .container{
+    position: absolute;
+    height: 100%;
+    display: flex;
+}    
+.header-content{
+    position: relative;
+    width: 800px;
+    height: 95%;
+    display: flex; 
+}
+.title{
+    left: 80px;
+    opacity: 0;
+    animation: page-fadeIn 1s 1s ease forwards;
+}
+
+.header-video1, .header-video2, .header-video3{
+    position: absolute;
+}
+
+.header-video1{
+    top: 80px;
+    left: 100px;
+    transform: translateX(-300px);
+    animation: header-video-from-left-animation 1.5s  ease forwards;
+}
+.header-video2{
+    top: 260px;
+    left: 0px;
+    transform: translateX(-300px);
+    animation: header-video-from-left-animation 1.5s 0.2s ease forwards;
+}
+@keyframes header-video-from-left-animation {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.header-video3{
+    top: 120px;
+    left: 500px;
+    transform: translateX(300px);
+    animation: header-video-from-right-animation 1.5s ease forwards;
+}
+@keyframes header-video-from-right-animation {
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.header-video1::before, 
+.header-video1::after, 
+.header-video2::before, 
+.header-video2::after, 
+.header-video3::before, 
+.header-video3::after{
+    content: '';
+    position: absolute;
+}
+
+.header-video1::before{
+    border-top: white solid 2px;
+    top: 0;
+    left: -50px;
+    right: -15px;
+}
+
+.header-video1::after{
+    border-left: white solid 2px;
+    top: -15px;
+    left: 0;
+    bottom: 250px;
+}
+
+.header-video2::before{
+    border-bottom: white solid 2px;
+    bottom: 2px;
+    left: -20px;
+    right: 50px;
+}
+
+.header-video2::after{
+    border-left: white solid 2px;
+    top: 300px;
+    left: 0;
+    bottom: -20px;
+}
+.header-video3::before{
+    border-bottom: white solid 3px;
+    bottom: 2px;
+    left: 70px;
+    right: -50px;
+}
+
+.header-video3::after{
+    border-right: white solid 2px;
+    top: 300px;
+    right: 0;
+    bottom: -20px;
+}
+
+.section-what-we-do{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    border-bottom: white solid 2px;
+}
+
+.section-what-we-do .blueprint{
+    opacity: 0.4;
+}
+
+.service-para{
+    width: 900px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-card-list{
+    width: 900px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card{
+    width: 220px;
+    height: 270px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+    box-shadow: -3px 3px 10px var(--shadow-color);
+    transition: all 0.2s ease;
+}
+
+
+.service-card::before, .service-card::after, 
+.border-support::before, .border-support::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+
+.service-card::before{
+    border-top: var(--primary-color) solid 5px ;
+    top: 0;
+    left: 0;
+    right: 80px;
+    transition: all 0.2s ease;
+}
+.border-support::before{
+    border-left: var(--primary-color) solid 5px ;
+    top: 0;
+    left: 0;
+    bottom: 100px;
+    transition: all 0.2s ease;
+}
+.service-card:hover::before{
+    left: 80px;
+    right: 0;
+}
+.service-card:hover .border-support::before{
+    top: 100px;
+    bottom: 0;
+}
+
+.service-card::after{
+    border-bottom: var(--primary-color) solid 5px ;
+    left: 80px;
+    right: 0;
+    bottom: 0;
+    transition: all 0.2s ease;
+} 
+.border-support::after{
+    border-right: var(--primary-color) solid 5px ;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    transition: all 0.2s ease;
+} 
+.service-card:hover::after{
+    left: 0;
+    right: 80px;
+}
+.service-card:hover .border-support::after{
+    top: 0;
+    bottom: 100px;
+}
+
+.service-card:nth-child(1){
+    background: url('../assets/images/other/architecture.png');
+    background-size: cover;
+}
+.service-card:nth-child(2){
+    background: url('../assets/images/other/interior-design.jpg');
+    background-size: cover;
+}
+.service-card:nth-child(3){
+    background: url('../assets/images/other/exterior-design.jpg');
+    background-size: cover;
+}
+.service-card:nth-child(4){
+    background: url('../assets/images/other/urban-design.jpg');
+    background-size: cover;
+}
+.service-card:nth-child(5){
+    background: url('../assets/images/other/3d-modeling.jpg');
+    background-size: cover;
+}
+.service-card:nth-child(6){
+    background: url('../assets/images/other/decor-planning.jpg');
+    background-size: cover;
+}
+
+.service-card:hover{
+    transform: scale(1.05);
+}
+.service-card:hover .service-card-content{
+    opacity: 0;
+}
+.service-card:hover .description{
+    opacity: 1;
+}
+
+.service-card-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.822);
+    opacity: 1;
+    transition: ease-in 0.2s;
+}
+
+.service-card p{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+.service-card-content img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.service-card-content .tag-line{
+    display: block;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card .description{
+    position: absolute;
+    margin: 0;
+    padding: 5px 15px 15px 15px;
+    left: 0;
+    bottom: 0;
+    display: block;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.675);
+    opacity: 0;
+    transition: ease-in 0.2s;
+}
+
+
+
+.section-our-process{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    border-bottom: white solid 2px;
+}
+
+.section-our-process .blueprint{
+    opacity: 0.2;
+}
+
+.process{
+    width: 70%;
+}
+
+/* process section */
+
+
+
+.section-why-you-choose-us{
+    width: 100%;
+    height: 1050px;
+    position: relative;
+    border-bottom: white solid 2px;
+    text-align: center;
+}
+
+#why-you-choose-us-description{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.reasons-list{
+    width: 700px;
+    text-align: justify;
+    font-family: 'Gotham';
+}
+
+.reasons-list li span{
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.reasons-list li p{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.reasons-list li:nth-child(1){
+    list-style-image: url('../assets/images/icons/experience.png');
+}
+.reasons-list li:nth-child(2){
+    list-style-image: url('../assets/images/icons/quality.png');
+}
+.reasons-list li:nth-child(3){
+    list-style-image: url('../assets/images/icons/creativity.png');
+}
+.reasons-list li:nth-child(4){
+    list-style-image: url('../assets/images/icons/customer-service.png');
+}
+.reasons-list li:nth-child(5){
+    list-style-image: url('../assets/images/icons/awards.png');
+}

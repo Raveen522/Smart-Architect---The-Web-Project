@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+
+    <!-- ******* Navigation bar ******* -->
+    <div class="nav-bar">
+        <a href="./index.html">
+            <div class="logo">
+                <img class="logo" src="./assets/images/icons/logo.png" alt="logo">
+            </div>
+        </a>
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li class="current-page-nav"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- ******* End of Navigation bar ******* -->
+
+    <!-- Scroll progress button -->
+    <div id="scroll_progress" onclick="toTop()">
+        <img src="./assets/images/icons/up-arrow.png" alt="up">
+    </div>
+    <!--  End of Scroll progress button -->
+
+    <!-- Main content here -->
+    <main>
+        <!-- ******* Section Header ******* -->
+        <section class="header">
+            <video src="./assets/videos/video_06.mp4" width="100%" height="100%" autoplay muted loop></video>
+
+            <div class="container">
+                <div class="title">
+                    <h1>CONNECT WITH US</h1>
+                </div>
+            </div>
+        </section>
+        <!-- ******* End of Section Header ******* -->
+
+        <!-- ******* Section Contact Details ******* -->
+        <section class="section-contact-details">
+            <img src="./assets/images/blueprints/blueprint_08.png" alt="" class="blueprint">
+            <div class="container page-section">
+                <div class="basic-details">
+                    <h1 class="section-title">CONTACT US</h1>
+                    <div class="contact-list">
+                        <div class="contact-item address">
+                            <img src="./assets/images/icons/address.png" alt="">
+                            <p>
+                                No: 123/A <br>
+                                Lane 1 <br>
+                                Street 1<br>
+                                City
+                            </p>
+                        </div>
+                        <div class="contact-item address">
+                            <img src="./assets/images/icons/call.png" alt="">
+                            <p>
+                                +94 123 4567 <br> <br>
+                                +94 123 6549<br>
+                            </p>
+                        </div>
+                        <div class="contact-item address">
+                            <img src="./assets/images/icons/email.png" alt="">
+                            <p>
+                                info@smartarchitect.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.6508745011383!2d79.8544611548437!3d6.920279496188437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259152b58a7e3%3A0x1fccd01ee1d720f0!2s121a%20Sir%20James%20Pieris%20Mawatha%2C%20Colombo%2000200!5e0!3m2!1sen!2slk!4v1680026757225!5m2!1sen!2slk" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+    
+                <div class="ask-anything-form page-section" id="ask-anything-form page-section">
+                    <h1 class="section-title">LET US KNOW WE CAN HELP YOU.</h1>
+                    <p>
+                        Give us a call or drop by anytime.
+                        we endeavour to answer all enquiries within 24 hours on business days.
+                        We will be happy to answer your questions.
+                    </p>
+    
+    
+                    <form onsubmit="return false">
+                        <input type="text" id="txt-f-name" placeholder="First name" pattern="[A-Za-z]{4,}" title="Only English letters" required> 
+                        <input type="text" id="txt-l-name" placeholder="Last name" pattern="[A-Za-z]{4,}" title="Only English letters" required> 
+                        <input type="email" id="txt-email" placeholder="Email" required> 
+                        <input type="text" id="txt-tp" placeholder="Phone number" pattern="[0-9]{7,}" title="Numbers only with minimum of 7 Numbers" required> 
+                        <input type="text" id="txt-subject" placeholder="Subject" required>
+                        <textarea name="message" id="txt-message" cols="30" rows="3" placeholder="Your Message"  required></textarea> 
+                        <input type="submit" value="Send Message" onclick="send_message()">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ******* End of Section Contact Details ******* -->
+
+        <!-- ******* Section Join with Us ******* -->
+        <section class="section-join-with-us" id="section-join-with-us">
+            <img src="./assets/images/blueprints/blueprint_03.png" alt="" class="blueprint">
+            <div class="container page-section">
+                <div class="content">
+                    <h2>Do you want to be a part of us?</h2>
+                    <p>
+                        Now you have a chance to be a part of professionals in 
+                        leading company of the field
+                    </p>
+                    <a href="./job_application.html"><button>Fill the application</button></a>
+                </div>
+                <div class="our-team">
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ******* End of Section Join with Us ******* -->
+    </main>
+    <!-- End of Main content here -->
+
+    <footer>
+        <img class="footer-blueprint" src="./assets/images/blueprints/blueprint-footer.png">
+        
+        <div class="footer-elements">
+            <div class="contact">
+                <h2>Contact us</h2>
+                <ul>
+                    <li><h3>Address</h3><p> <b>:</b> No: 123/A, Street 1, Lane 1, City</p></li>
+                    <li><h3>Tel</h3><p> <b>:</b> +94 70 123 4567</p></li>
+                    <li><h3>Email</h3><p> <b>:</b> info@smartarchitect.com</p></li>
+                </ul>
+            </div>
+            
+            <div class="logo-title">
+                <div class="logo">
+                    <img class="logo" src="./assets/images/icons/logo.png" alt="logo">
+                </div>
+                <h4>SMART ARCHITECT</h4>
+                <p>Where Smart Meets Beautiful</p>
+            </div>
+
+            <div class="social-link">
+                <h2>Follow us on</h2>
+                <ul class="links">
+                    <li class="facebook"><a href="https://facebook.com"></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/"></a></li>
+                    <li class="twitter"><a href="https://twitter.com/"></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/"></a></li>
+                    <li class="pinterest"><a href="https://www.pinterest.com/"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script>
+        function send_message(){
+            var f_name = document.getElementById("txt-f-name").value;
+            var l_name = document.getElementById("txt-l-name").value;
+            var email = document.getElementById("txt-email").value;
+            var tp = document.getElementById("txt-tp").value;
+            var subject = document.getElementById("txt-subject").value;
+            var message = document.getElementById("txt-message").value;
+
+
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    alert(this.responseText);
+                    clearInputs();
+                }else{
+                    alert("Server Error");
+                }
+            };
+
+            xmlhttp.open("POST", "./php/sendMessage.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send(
+                "f_name=" + f_name +"&"+ 
+                "l_name=" + l_name +"&"+ 
+                "email=" + email +"&"+ 
+                "tp=" + tp +"&"+ 
+                "subject=" +subject +"&"+ 
+                "message=" + message
+                );
+        }
+
+        function clearInputs(){
+            document.getElementById("txt-f-name").value ='';
+            document.getElementById("txt-l-name").value ='';
+            document.getElementById("txt-email").value ='';
+            document.getElementById("txt-tp").value ='';
+            document.getElementById("txt-subject").value ='';
+            document.getElementById("txt-message").value ='';
+        }
+    </script>
+</body>
+</html>

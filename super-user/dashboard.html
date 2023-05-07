@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/icons/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body onload="loadUser()">
+    <img src="../assets/images/blueprints/blueprint_06.png" alt="" class="blueprint">
+    <div class="container">
+        <!-- ****** Header ****** -->
+        <div class="header">
+            <div class="col-title">
+                <img src="../assets/images/icons/logo.png" alt="" class="logo">
+                <h1 class="page-title">SMART ARCHITECT</h1>
+            </div>
+
+            <div class="profile-info">
+                <img src="../assets/images/exco/Henry-Even.jpg" alt="" class="profile-img">
+                <p id="user-name">User</p>
+                <div class="drop-down">
+                    <img src="../assets/images/icons/down-arrow.png" alt="" class="profile-settings-btn">
+                    <div class="dropdown-content">
+                        <p onclick="showUserSettings()">Settings</p>
+                        <p onclick="logout()">Logout</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- ****** End of Header ****** -->
+
+        <!-- ****** Sub Titles ****** -->
+        <div id="sub-dashboard" class="sub-title">
+            <img src="../assets/images/icons/dashboard.png" alt="" class="section-icon">
+            <h2>Dashboard</h2>
+        </div>
+
+        <div id="sub-applications" class="sub-title">
+            <img src="../assets/images/icons/left-arrow.png" alt="" class="back-icon" onclick="goBack()">
+            <img src="../assets/images/icons/resume.png" alt="" class="section-icon">
+            <h2>Applications Received</h2>
+        </div>
+
+        <div id="sub-messages" class="sub-title">
+            <img src="../assets/images/icons/left-arrow.png" alt="" class="back-icon" onclick="goBack()">
+            <img src="../assets/images/icons/messenger.png" alt="" class="section-icon">
+            <h2>Messages Received</h2>
+        </div>
+        <!-- ****** End of Sub Titles ****** -->
+
+        <!-- ****** Settings ****** -->
+        <div class="section-settings">
+            <div class="setting-btn" onclick="showApplicationsList()">
+                <img src="../assets/images/icons/resume.png" alt="" class="setting-icon">
+                <p class="setting-title">
+                    Applications <br>
+                    Received
+                </p>
+            </div>
+            <div class="setting-btn" onclick="showMessagesList()">
+                <img src="../assets/images/icons/messenger.png" alt="" class="setting-icon">
+                <p class="setting-title">
+                    Messages <br>
+                    Received
+                </p>
+            </div>
+        </div>
+        <!-- ****** End of Settings ****** -->
+
+
+        <!-- ****** User settings ****** -->
+        <div class="user-settings" id="user-settings">
+            <h2>Settings</h2>
+            <img src="../assets/images/icons/close.png" class="close-btn" alt="" onclick="closeUserSettings()">
+            <p id="userID"></p>
+            <label for="user-name">User Name:</label> <br>
+            <input type="text" name="user_name" id="user_name" value=" "> <br>
+
+            <label for="user-name">Current Password:</label> <br>
+            <input type="password" name="password" id="password" value=""> <br>
+
+            <label for="user-name">New Password:</label> <br>
+            <input type="text" name="new-password" id="new-password"> <br>
+
+            <label for="user-name">Confirm Password:</label> <br>
+            <input type="text" name="confirm-password" id="confirm-password"> <br>
+
+            <button onclick="saveUserSettings()">Save Changes</button>
+            <br>
+            <button onclick="clearSettings()">Discard</button>
+            <br> <br>
+        </div>
+        <!-- ****** End of User settings ****** -->
+
+
+        <!-- ****** Applications ****** -->
+        <div id="applications-list" class="data-table-view">
+            <!-- ****** Application table head ****** -->
+            <table class="table-head">
+                <thead>
+                    <tr>
+                        <th>Application ID</th>
+                        <th>Name with initials</th>
+                        <th>Full Name</th>
+                        <th>Telephone</th>
+                        <th>Checked</th>
+                    </tr>
+                </thead>
+            </table>
+            <!-- ****** End of Application table head ****** -->
+
+            <div class="table-content">
+                <table class="applications" cellpadding="0" cellspacing="0">
+                    <tbody id="loaded-applications">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ****** Application Content ****** -->
+        <div class="application" id="application">
+            <h2>Application Form</h2>
+            <img src="../assets/images/icons/close.png" class="close-btn" alt="" onclick="closeApplication()">
+
+            <hr>
+
+            <form id="application-data" onsubmit="return false">
+                <div class="col-photo">
+                    <img src="../assets/images/other/application-photo.png" alt="">                    
+                </div>
+
+                <div class="col-form">
+                    <label id="name-with-initials">Name with initials:</label> <br>
+                    <label id="full-name">Full name:</label> <br>
+                    <label id="address">Address :</label> <br>
+
+                    <div class="input-group">
+                        <label id="zip-code">Zip Code :</label>
+                        <label id="country">Country :</label>
+                        <label id="tp-num">Telephone :</label>
+                        <label id="home-tp-num">Home Telephone :</label>
+                    </div>
+                
+                    <label id="email">Email :</label>
+
+                    <br>
+                    <br>
+                    <label id="">Description :</label> <br>
+                    <textarea name="candidate-description" id="candidate-description" ></textarea>
+                    
+                    <br>
+                    <label id="">Qualifications :</label> <br>
+                    <textarea name="candidate-qualifications" id="candidate-qualifications" ></textarea>
+
+                    <button onclick="sendApplicationRespond()">Send Response</button>
+                </div>
+            </form>
+            
+        </div>
+        <!-- ****** End of Application Content ****** -->
+        <!-- ****** End of Applications ****** -->
+
+
+        <!-- Messages -->
+        <div id="messages-list" class="data-table-view">
+            <!-- ****** Application table head ****** -->
+            <table class="table-head">
+                <thead>
+                    <tr>
+                        <th>Message ID</th>
+                        <th>Name</th>
+                        <th>Message</th>
+                        <th>Email</th>
+                        <th>Checked</th>
+                    </tr>
+                </thead>
+            </table>
+            <!-- ****** End of Application table head ****** -->
+
+            <div class="table-content">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody id="loaded-messages">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ****** Message Content ****** -->
+        <div class="message" id="message">
+            <h3 id="messageID">Message ID: SA-M-0021</h3> 
+            <img src="../assets/images/icons/close.png" class="close-btn" alt="" onclick="closeMsg()">
+            <form id="message-data" onsubmit="return false">
+                <label id="f-name">First name : First name</label> <br>
+                <label id="l-name">Last name : Last name</label> <br>
+                <label id="msgEmail">Email : abcdefg@gmail.com</label> <br>
+                <label id="tp">Telephone : 070 123 4567</label> <br>
+                <label id="subject">Subject : Subject here</label> <br>
+                <label id="message">
+                    Message : <br>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit debitis ea quos fugit asperiores.
+
+                </label>
+                <br>
+                <br>
+                <button onclick="sendRespondMessage()">Send reply</button>
+                
+            </form>
+        </div>
+        <!-- ****** End of Message Content ****** -->
+        <!-- ****** End of Messages ****** -->
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+
+    <script>
+        function showUserSettings(){
+            var userSettings = document.getElementById("user-settings");
+            userSettings.style.opacity = "1";
+            userSettings.style.visibility = "visible";
+        }
+        function closeUserSettings(){
+            var userSettings = document.getElementById("user-settings");
+            userSettings.style.opacity = "0.1";
+            userSettings.style.visibility = "hidden";
+        }
+
+        function logOut(){
+            window.location.href = "./index.html";
+        }
+
+        function showApplicationsList(){
+            var applicationWindow = document.getElementById("applications-list");
+            var title_dashboard = document.getElementById("sub-dashboard");
+            var title_applications = document.getElementById("sub-applications");
+
+            title_dashboard.style.display = "none";
+            title_applications.style.display = "flex";
+            applicationWindow.style.visibility = "visible";
+
+            loadApplications();
+        }
+
+        function showMessagesList(){
+            var messagesWindow = document.getElementById("messages-list");
+            var title_dashboard = document.getElementById("sub-dashboard");
+            var title_messages = document.getElementById("sub-messages");
+
+            title_dashboard.style.display = "none";
+            title_messages.style.display = "flex";
+            messagesWindow.style.visibility = "visible";
+
+            loadMessages();
+        }
+
+        function goBack(){
+            var applicationWindow = document.getElementById("applications-list");
+            var messagesWindow = document.getElementById("messages-list");
+            var title_dashboard = document.getElementById("sub-dashboard");
+            var title_applications = document.getElementById("sub-applications");
+            var title_messages = document.getElementById("sub-messages");
+
+            title_dashboard.style.display = "flex";
+            title_applications.style.display = "none";
+            title_messages.style.display = "none";
+            applicationWindow.style.visibility = "hidden";
+            messagesWindow.style.visibility = "hidden";
+        }
+
+        function loadMessage(messageID){
+            var message = document.getElementById("message");
+            message.style.opacity = "1";
+            message.style.visibility = "visible";
+            
+            document.getElementById("messageID").innerText = "Message ID: "+messageID;
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("message-data").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("POST", "../php/loadMessage.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("messageID=" + messageID);
+        }
+
+        function closeMsg(){
+            var message = document.getElementById("message");
+            message.style.opacity = "0";
+            message.style.visibility = "hidden";
+        }
+
+        function loadApplication(applicationID){
+            var application = document.getElementById("application");
+            application.style.opacity = "1";
+            application.style.visibility = "visible";
+
+
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("application-data").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("POST", "../php/loadApplication.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send("applicationID=" + applicationID);
+        }
+
+        function sendApplicationRespond(){
+            var mailAddress = document.getElementById("email").innerText.split(':')[1];
+            location.href = "mailto:"+mailAddress+"?subject=About%20your%20application%20sent%20to%20SMART%20ARCHITECT";
+        }
+        function sendRespondMessage(){
+            var mailAddress = document.getElementById("msgEmail").innerText.split(':')[1];
+            var subject = document.getElementById("subject").innerText.split(':')[1];
+            location.href = "mailto:"+mailAddress+"?subject=About%20"+subject;
+        }
+
+        function closeApplication(){
+            var application = document.getElementById("application");
+            application.style.opacity = "0";
+            application.style.visibility = "hidden";
+        }
+
+        function logout(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    if(this.response=="done"){
+                        location.href = "./index.html";
+                    }else{
+                        alert("Error while trying to logout. Try again!")
+                    }
+                }
+            };
+            xmlhttp.open("POST", "../php/logout.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send();
+        }
+
+        function loadUser(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    data = this.response.split(" ", 2);
+                    document.getElementById("userID").innerText = "User ID :"+data[0];
+                    document.getElementById("user-name").innerText = data[1];
+                    document.getElementById("user_name").value = data[1];
+                }
+            };
+            xmlhttp.open("POST", "../php/loadUserSettings.php", true);
+            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xmlhttp.send();
+        }
+
+        function saveUserSettings(){
+            var userID = document.getElementById("userID").innerText.split(":")[1];
+            var currentPW = document.getElementById("password").value;
+            var newPW = document.getElementById("new-password").value;
+            var confirmNewPW = document.getElementById("confirm-password").value;
+
+            if (newPW==confirmNewPW){
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        alert(this.response);
+                    }
+                };
+                xmlhttp.open("POST", "../php/changeUserSettings.php", true);
+                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlhttp.send(                
+                    "userID=" + userID +"&"+ 
+                    "currentPW=" + currentPW +"&"+ 
+                    "newPW=" + newPW +"&"+ 
+                    "confirmNewPW=" + confirmNewPW
+                );
+            }else{
+                alert("New password does not match with your confirmation please check.")
+            }
+        }
+        function clearSettings(){
+            document.getElementById("password").value = "";
+            document.getElementById("new-password").value = "";
+            document.getElementById("confirm-password").value = "";
+        }
+    </script>
+</body>
+</html>

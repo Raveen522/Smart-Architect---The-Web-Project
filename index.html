@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart Architect</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    
+</head>
+
+<body>
+
+    <!-- ******* Navigation bar ******* -->
+    <div class="nav-bar">
+        <a href="./index.html">
+            <div class="logo">
+                <img class="logo" src="./assets/images/icons/logo.png" alt="logo">
+            </div>
+        </a>
+
+        <ul>
+            <li class="current-page-nav"><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+    </div>
+    <!-- ******* End of Navigation bar ******* -->
+
+    <!-- Scroll progress button -->
+    <div id="scroll_progress" onclick="toTop()">
+            <img src="./assets/images/icons/up-arrow.png" alt="up">
+    </div>
+    <!--  End of Scroll progress button -->
+
+
+    <!-- Main content here -->
+    <main>
+
+        <!-- ******* Background image slider ******* -->
+        <div class="home-slider">
+            <div class="slider-wrapper">
+                <img src="./assets/images/home-slider/hero_background_1.jpg" alt="Slide 1" class="active">
+                <img src="./assets/images/home-slider/hero_background_2.jpg" alt="Slide 2">
+                <img src="./assets/images/home-slider/hero_background_4.jpg" alt="Slide 4">
+                <img src="./assets/images/home-slider/hero_background_5.jpg" alt="Slide 5">
+            </div>
+
+            <div class="slider-container">
+                <div class="home-title">
+                    <h1>SMART <br> ARCHITECT</h1>
+                    <div class="tag-line">
+                        <h3>Where Smart Meets Beautiful</h3>
+                    </div>
+                </div>
+
+                
+                <div class="slider-controls">
+                    <button class="prev-slide"><img src="./assets/images/icons/left-arrow.png" alt=""></button>
+                    <div class="slider-dots"></div>
+                    <button class="next-slide"><img src="./assets/images/icons/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+ 
+        </div>
+        <!-- ******* End of Background image slider ******* -->
+
+        <!-- ****** Section We are ****** -->
+        <section class="section-we-are">
+            <img class="blueprint"  src="./assets/images/blueprints/blueprint_01.png" alt="">
+            <div class="container page-section">
+                <div class="content">
+                    <h1>WE ARE</h1>
+                    <p>
+                        <b>A</b> leading architecture and design firm with over <b>25</b> years of experience creating beautiful, 
+                        functional, and sustainable spaces. Our team of more than <b>10</b> experts in architecture, interior design, and urban planning is committed to delivering exceptional results for clients of all sizes and budgets, from individual homeowners to large corporations.
+                    </p>
+                    <a href="./about.html">
+                        <button>More About Us</button>
+                    </a>
+                </div>
+                <div class="intro">
+                    <div class="experience">
+                        <h1>25+</h1>
+                        <h2>Years Experience</h2>
+                    </div>
+                    <div class="intro-video">
+                        <video class="video" src="./assets/videos/video_01.mp4" width="230px" autoplay muted loop></video>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- ****** End of Section We are ****** -->
+
+
+        <!-- ****** Section Our Services ****** -->
+        <section class="section-our-services">
+            <img class="blueprint" src="./assets/images/blueprints/blueprint_07.png" alt="">
+            <div class="container page-section">
+                <h1 class="section-title">OUR SERVICES</h1>
+                <p class="service-para"><b>O</b>ur services include 
+                    <br>
+                    <span>
+                        Architecture <span class="separator">|</span> 
+                        Exterior and Interior Planning <span class="separator">|</span>  
+                        Urban Design Planning <span class="separator">|</span>  
+                        Decoration Planning <span class="separator">|</span>  
+                        and Furniture Design Planning. 
+                    </span>
+                    <br>
+                    We use cutting-edge technology and the latest design tools to create 3D visualizations and models that help our clients see their projects come to life before construction even begins.</p>
+    
+                <div class="service-list">
+                    <div class="service">
+                            <p>ARCHITECTURE</p>
+                            <img src="./assets/images/icons/architect.png" alt="">
+                            <p class="description">Custom designs for every need.</p>
+                    </div>
+                    <div class="service">
+                            <p>INTERIOR DESIGN</p>
+                            <img src="./assets/images/icons/interior-design.png" alt="">
+                            <p class="description">Elevate your living space</p>
+                    </div>
+                    <div class="service">
+                            <p>EXTERIOR DESIGN</p>
+                            <img src="./assets/images/icons/exterior-design.png" alt="">
+                            <p class="description">Transform your outdoor space</p>
+                    </div>
+                    <div class="service">
+                            <p>URBAN DESIGN</p>
+                            <img src="./assets/images/icons/urban-design.png" alt="">
+                            <p class="description">Create livable, sustainable communities</p>
+                    </div>
+                    <div class="service">
+                            <p>3D MODELLING</p>
+                            <img src="./assets/images/icons/3d-modeling.png" alt="">
+                            <p class="description">See your designs come to life</p>
+                    </div>
+                    <div class="service">
+                            <p>DECOR PLAN</p>
+                            <img src="./assets/images/icons/decor-planning.png" alt="">
+                            <p class="description">Add beauty and charm to your space</p>
+                    </div>
+                </div>
+
+                <a href="./services.html"><button>Know more about services</button></a>
+                
+                <div class="features-list">
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="experience-count">10+</h2>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="clients-count">85+</h2>
+                        <p>current clients</p>
+                    </div>
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="awards-count">5+</h2>
+                        <p>Awards have won</p>
+                    </div>
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="projects-count">145+</h2>
+                        <p>Completed projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ****** End of Section Our Services ****** -->
+
+
+        <!-- ****** Section Latest Projects ****** -->
+        <section class="latest-projects">
+            <img class="blueprint" src="./assets/images/blueprints/blueprint_03.png" alt="">
+            <div class="container  page-section">
+                <h1 class="section-title">LATEST PROJECTS</h1>
+                <div class="project-list">
+                    <div class="project-card">
+                        <p>The new Elite Hotels branch located at Sydney</p>
+                        <h3>Luxury Hotel Architecture</h3>
+                    </div>
+                    <div class="project-card">
+                        <p>Green Land Restaurant in Switzerland</p>
+                        <h3>Nature Friendly Restaurant</h3>
+                    </div>
+                    <div class="project-card">
+                        <p>Newly opened Windy's Beauty Care center</p>
+                        <h3>Beauty Salon Interior</h3>
+                    </div>
+                    <div class="project-card">
+                        <p>Happy Kids Preschool premises</p>
+                        <h3>Preschool Exterior</h3>
+                    </div>
+                </div>
+                <a href="./projects.html"><button>See our all projects</button></a>
+            </div>
+
+        </section>
+        <!-- ****** End of Section Latest Projects ****** -->
+
+
+        <!-- ****** Section Testimonials ****** -->
+        <section class="section-testimonials">
+            <img class="blueprint" src="./assets/images/blueprints/blueprint_04.png" alt="">
+            <div class="container  page-section">
+                <h1 class="section-title">WHAT THEY ARE SAYING..</h1>
+                <div class="card-slider">
+                    <div class="slider-nav-buttons">
+                        <button onclick="prevCard()" class="prv-card"><img src="./assets/images/icons/left-arrow.png" alt=""></button>
+                        <button onclick="nextCard()" class="nxt-card"><img src="./assets/images/icons/right-arrow.png" alt=""></button>
+                    </div>
+                    <div class="review-list">
+                        <div class="review-card active-card">
+                            <img src="./assets/images/icons/left-quote.png" alt="" class="quot-66">
+                            <h2 id="review-card-title">Professional and Reliable</h2>
+                            <hr>
+                            <p id="review-card-description">
+                                Smart Architect provided professional and reliable services for my exterior design planning project. They completed the project on time and within budget, and the results were outstanding. I highly recommend their services.
+                            </p>
+                            <div class="reviewer">
+                                <img id="reviewer-img" src="./assets/images/clients/Sarah-Lee.jpg" alt="">
+                                <div class="reviewer-info">
+                                    <h3 id="reviewer-name">Sarah Lee</h3> 
+                                    <h3 id="reviewer-posision">Teacher</h3>
+                                </div>
+    
+                            </div>
+                            <img src="./assets/images/icons/right-quote.png" alt="" class="quot-99">
+                        </div>
+                        <div class="review-card">
+                            <img src="./assets/images/icons/left-quote.png" alt="" class="quot-66">
+                            <h2 id="review-card-title">Exceeded Expectations</h2>
+                            <hr>
+                            <p id="review-card-description">
+                                Smart Architect exceeded my expectations with their architecture and interior design services. They listened to my needs and created a space that was both functional and beautiful. I highly recommend their services to anyone looking for high-quality design work.
+                            </p>
+                            <div class="reviewer">
+                                <img id="reviewer-img" src="./assets/images/clients/Tom-Johnson.jpg" alt="">
+                                <div class="reviewer-info">
+                                    <h3 id="reviewer-name">Tom Johnson</h3> 
+                                    <h3 id="reviewer-posision">Engineer</h3>
+                                </div>
+    
+                            </div>
+                            <img src="./assets/images/icons/right-quote.png" alt="" class="quot-99">
+                        </div>
+                        <div class="review-card">
+                            <img src="./assets/images/icons/left-quote.png" alt="" class="quot-66">
+                            <h2 id="review-card-title">A Cut Above the Rest</h2>
+                            <hr>
+                            <p id="review-card-description">
+                                Smart Architect is a cut above the rest in the architectural industry. Their attention to detail, creativity, and ability to deliver outstanding results are unmatched. As a luxury hotel chain owner, I highly recommend them for the best in architectural services.
+                            </p>
+                            <div class="reviewer">
+                                <img id="reviewer-img" src="./assets/images/clients/Michael-Brown.jpg" alt="">
+                                <div class="reviewer-info">
+                                    <h3 id="reviewer-name">Michael Brown</h3> 
+                                    <h3 id="reviewer-posision">CEO, Elite Hotels</h3>
+                                </div>
+    
+                            </div>
+                            <img src="./assets/images/icons/right-quote.png" alt="" class="quot-99">
+                        </div>
+                    </div>
+
+                    <div class="card-list-dots">
+                        <div class="card-dot active-dot">
+                        </div>
+                        <div class="card-dot">
+                        </div>
+                        <div class="card-dot">
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./about.html">There are more <img src="./assets/images/icons/right-arrow_2.png" alt=""> </a>
+            </div>
+            
+        </section>
+        <!-- ****** end of Section Testimonials ****** -->
+    </main>
+    <!-- End of Main content here -->
+
+    <footer>
+        <img class="footer-blueprint" src="./assets/images/blueprints/blueprint-footer.png">
+        
+        <div class="footer-elements">
+            <div class="contact">
+                <h2>Contact us</h2>
+                <ul>
+                    <li><h3>Address</h3><p> <b>:</b> No: 123/A, Street 1, Lane 1, City</p></li>
+                    <li><h3>Tel</h3><p> <b>:</b> +94 70 123 4567</p></li>
+                    <li><h3>Email</h3><p> <b>:</b> info@smartarchitect.com</p></li>
+                </ul>
+            </div>
+            
+            <div class="logo-title">
+                <div class="logo">
+                    <img class="logo" src="./assets/images/icons/logo.png" alt="logo">
+                </div>
+                <h4>SMART ARCHITECT</h4>
+                <p>Where Smart Meets Beautiful</p>
+            </div>
+
+            <div class="social-link">
+                <h2>Follow us on</h2>
+                <ul class="links">
+                    <li class="facebook"><a href="https://facebook.com"></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/"></a></li>
+                    <li class="twitter"><a href="https://twitter.com/"></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/"></a></li>
+                    <li class="pinterest"><a href="https://www.pinterest.com/"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function onScrollAnimations(){
+            var progressBar = document.getElementById("scroll_progress");
+            var scrollTop = document.documentElement.scrollTop;
+            var scrollHeight = document.documentElement.scrollHeight;
+            var clientHeight = document.documentElement.clientHeight;
+            var scrollPercentage = Math.round((scrollTop / (scrollHeight - clientHeight)) * 100);
+            console.log(scrollPercentage);
+
+            if(scrollPercentage == 13){
+                document.documentElement.style.setProperty('--experience-line-top',"experience-line-animation-top 1.5s 0.6s ease forwards");
+                    document.documentElement.style.setProperty('--experience-line-bottom',"experience-line-animation-bottom 1.5s 0.6s ease forwards");
+            }else if(scrollPercentage < 13){
+                document.documentElement.style.setProperty('--experience-line-top',"none");
+                document.documentElement.style.setProperty('--experience-line-bottom',"none");
+            }
+
+            if(scrollPercentage == 48){
+                featureCounter();
+            }else if(scrollPercentage < 25){
+                featureCounterReset();
+            }
+        };
+
+        window.addEventListener('scroll', onScrollAnimations);
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+
+</body>
+</html>

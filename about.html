@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+    
+    <!-- ******* Navigation bar ******* -->
+    <div class="nav-bar">
+        <a href="./index.html">
+            <div class="logo">
+                <img class="logo" src="./assets/images/icons/logo.png" alt="logo">
+            </div>
+        </a>
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li class="current-page-nav"><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <!-- ******* End of Navigation bar ******* -->
+
+    <!-- Scroll progress button -->
+    <div id="scroll_progress" onclick="toTop()">
+        <img src="./assets/images/icons/up-arrow.png" alt="up">
+    </div>
+    <!--  End of Scroll progress button -->
+
+    <!-- Main content here -->
+    <main>
+        <!-- ******* Section Header ******* -->
+        <section class="header">
+            <div class="title">
+                <h1>WE ARE THE PROFESSIONALS</h1>
+                <p>
+                    Designing spaces, shaping experiences 
+                </p>
+            </div>
+        </section>
+        <!-- ******* End of Section Header ******* -->
+
+        <!-- ******* Section We are ******* -->
+        <section class="section-we-are">
+            <img class="blueprint"  src="./assets/images/blueprints/blueprint_05.png" alt="">
+            <div class="container page-section">
+                
+                <div class="content">
+                    <h1>WE ARE</h1>
+                    <p>
+                        Smart Architect is a full-service architecture firm with over 25 years of experience in delivering innovative and sustainable solutions for a diverse range of clients. They specialize in residential and commercial buildings, public spaces, and urban planning projects. Smart Architect believes in collaboration with clients and works closely with them to understand their needs, goals, and vision. With a team of over 10 experts in architecture, interior design, and urban planning, they can tackle any challenge.
+                    </p>
+                </div>
+                <div class="intro">
+                    <div class="experience">
+                        <h1>25+</h1>
+                        <h2>Years Experience</h2>
+                    </div>
+                    <div class="intro-video">
+                        <video class="video" src="./assets/videos/video_01.mp4" width="230px" autoplay muted loop></video>
+                    </div>
+                    
+                </div>
+
+                <div class="features-list">
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="experience-count">10+</h2>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="clients-count">85+</h2>
+                        <p>current clients</p>
+                    </div>
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="awards-count">5+</h2>
+                        <p>Awards have won</p>
+                    </div>
+                    <div class="features-counter">
+                        <h2 class="counting-number" id="projects-count">145+</h2>
+                        <p>Completed projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ******* End of Section We are ******* -->
+
+        <!-- ******* Section Awards ******* -->
+        <section class="section-awards">
+            <img src="./assets/images/blueprints/blueprint_02.png" alt="" class="blueprint">
+            <div class="container page-section">
+                <h1 class="section-title">NEWEST AWARDS WE EARNED</h1>
+
+                <div class="award-slider">
+                    <div class="list-nav-buttons">
+                        <button onclick="prevAwards()" class="prv-card"><img src="./assets/images/icons/left-arrow.png" alt=""></button>
+                        <button onclick="nextAwards()" class="nxt-card"><img src="./assets/images/icons/right-arrow.png" alt=""></button>
+                    </div>
+                    <div class="award-list">
+                        <div class="list-group">
+                            <div class="award">
+                                <img src="./assets/images/awards/Architizer-A+Awards.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Architizer A+Awards</h3>
+                                </div>
+                            </div>
+                            <div class="award">
+                                <img src="./assets/images/awards/Asia-Architecture-Award.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Asia Architecture Award</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <div class="award">
+                                <img src="./assets/images/awards/Australian-Institute-of-Architects-National-Awards.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Australian Institute of Architects National Awards</h3>
+                                </div>
+                            </div>
+                            <div class="award">
+                                <img src="./assets/images/awards/Dezeen-Awards.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Dezeen Awards</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <div class="award">
+                                <img src="./assets/images/awards/World-Architecture-Festival-Awards.jpg" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>World Architecture Festival Awards</h3>
+                                </div>
+                            </div>
+                            <div class="award">
+                                <img src="./assets/images/awards/Aga-Khan-Award-for-Architecture.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Aga Khan Award for Architecture</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <div class="award">
+                                <img src="./assets/images/awards/RIBA-Stirling-Prize.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>RIBA Stirling Prize</h3>
+                                </div>
+                            </div>
+                            <div class="award">
+                                <img src="./assets/images/awards/American-Institute-of-Architects-Gold-Medal.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>American Institute of Architects Gold Medal</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <div class="award">
+                                <img src="./assets/images/awards/German-design-award.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>German Design Award</h3>
+                                </div>
+                            </div>
+                            <div class="award">
+                                <img src="./assets/images/awards/Pritzker-Architecture-Prize.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Pritzker Architecture Prize</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <div class="award">
+                                <img src="./assets/images/awards/Royal-Gold-Medal.png" alt="" class="award-img">
+                                <div class="details">
+                                    <h3>Royal Gold Medal</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ******* End of Section Awards ******* -->
+
+        <!-- ******* Section Our Professionals ******* -->
+        <section class="section-our-professionals">
+            <img src="./assets/images/blueprints/blueprint_03.png" alt="" class="blueprint">
+            <div class="container page-section">
+                <h1 class="section-title">OUR PROFESSIONALS</h1>
+                <div class="staff-list">
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/John-White.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">CEO & Senior Engineer</h4>
+                            <h3 id="member-name">John White</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Anne-Margret.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Senior Designer</h4>
+                            <h3 id="member-name">Anne Margret</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Peter-Scott.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Technical Manager</h4>
+                            <h3 id="member-name">Peter Scott</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Mark-Barnet.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Quantity Surveyor</h4>
+                            <h3 id="member-name">Mark Barnet</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Bernard-Fernando.png" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Senior Architect</h4>
+                            <h3 id="member-name">Ravi Kumar</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Rachel-Patel.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Urbanist</h4>
+                            <h3 id="member-name">Rachel Patel</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Olivia-Martinez.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Accountant</h4>
+                            <h3 id="member-name">Olivia Martinez</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/James-Baker.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Administrative Officer</h4>
+                            <h3 id="member-name">James Baker</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Michel-Nguyen.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Architect</h4>
+                            <h3 id="member-name">Michel Nguyen</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Lily Christie.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">Junior Architect</h4>
+                            <h3 id="member-name">Lily Christie</h3>
+                        </div>
+                    </div>
+                    <div class="staff-member-card">
+                        <img src="./assets/images/exco/Henry-Even.jpg" alt="" id="member-img">
+                        <div class="member-details">
+                            <h4 id="member-position">IT Manager</h4>
+                            <h3 id="member-name">Henry Even</h3>
+                        </div>
+                    </div>
+                    <div class="vacancy-call">
+                        <h2>Here are space for you</h2>
+                        <h3>Now you can join with us</h3>
+                        <a href="./contact.html#section-join-with-us"><button>See how</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ******* End of Section Our Professionals ******* -->
+
+        <!-- ******* Section Our Clients ******* -->
+        <section class="section-our-clients">
+            <img src="./assets/images/blueprints/blueprint_06.png" alt="" class="blueprint">
+            <div class="container page-section">
+                <h1 class="section-title">SOME OF OUR CLIENTS</h1>
+                <div class="client-list">
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/equinox-fitness.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/ford.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/four-seasons.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/harvard-university.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/kinder-care.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/lush.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/mandarin-oriental.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/ritz-carlton.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/marriott.png" alt="" id="client-logo">
+                    </div>
+                    <div class="client">
+                        <img src="./assets/images/clients/companies/the-glam-room.png" alt="" id="client-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ******* End of Section Our Clients ******* -->
+    </main>
+    <!-- End of Main content here -->
+
+    <footer>
+        <img class="footer-blueprint" src="./assets/images/blueprints/blueprint-footer.png">
+        
+        <div class="footer-elements">
+            <div class="contact">
+                <h2>Contact us</h2>
+                <ul>
+                    <li><h3>Address</h3><p> <b>:</b> No: 123/A, Street 1, Lane 1, City</p></li>
+                    <li><h3>Tel</h3><p> <b>:</b> +94 70 123 4567</p></li>
+                    <li><h3>Email</h3><p> <b>:</b> info@smartarchitect.com</p></li>
+                </ul>
+            </div>
+            
+            <div class="logo-title">
+                <div class="logo">
+                    <img class="logo" src="./assets/images/icons/logo.png" alt="logo">
+                </div>
+                <h4>SMART ARCHITECT</h4>
+                <p>Where Smart Meets Beautiful</p>
+            </div>
+
+            <div class="social-link">
+                <h2>Follow us on</h2>
+                <ul class="links">
+                    <li class="facebook"><a href="https://facebook.com"></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/"></a></li>
+                    <li class="twitter"><a href="https://twitter.com/"></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/"></a></li>
+                    <li class="pinterest"><a href="https://www.pinterest.com/"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script>
+        const awardList = document.querySelector('.award-list');
+        const awardCardGroup = awardList.querySelectorAll('.list-group');
+
+        let currentAwardIndex = 0;
+        function nextAwards(){
+            if(currentAwardIndex < 5){
+                currentAwardIndex += 1;
+                awardCardGroup[currentAwardIndex].style.transform = 'translateX(20px)';
+                awardCardGroup[currentAwardIndex-1].style.transform = 'translateX(-1100px)';
+            }
+        }
+        function prevAwards(){
+            if(currentAwardIndex >0 && currentAwardIndex <= 5){
+                currentAwardIndex -= 1;
+                awardCardGroup[currentAwardIndex].style.transform = 'translateX(20px)';
+                awardCardGroup[currentAwardIndex+1].style.transform = 'translateX(1100px)';
+            }
+        }
+
+        function onScrollAnimations(){
+            var progressBar = document.getElementById("scroll_progress");
+            var scrollTop = document.documentElement.scrollTop;
+            var scrollHeight = document.documentElement.scrollHeight;
+            var clientHeight = document.documentElement.clientHeight;
+            var scrollPercentage = Math.round((scrollTop / (scrollHeight - clientHeight)) * 100);
+            console.log(scrollPercentage);
+
+            if(scrollPercentage == 15){
+                document.documentElement.style.setProperty('--experience-line-top',"experience-line-animation-top 1.5s 0.6s ease forwards");
+                document.documentElement.style.setProperty('--experience-line-bottom',"experience-line-animation-bottom 1.5s 0.6s ease forwards");
+
+                document.documentElement.style.setProperty('--feature-list-line-top',"features-list-line-animation-top 1s 0.7s forwards");
+                document.documentElement.style.setProperty('--feature-list-line-bottom',"features-list-line-animation-bottom 1s 0.7s forwards");
+                featureCounter();
+            }else if(scrollPercentage < 15){
+                document.documentElement.style.setProperty('--experience-line-top',"none");
+                document.documentElement.style.setProperty('--experience-line-bottom',"none");
+
+                document.documentElement.style.setProperty('--feature-list-line-top',"none");
+                document.documentElement.style.setProperty('--feature-list-line-bottom',"none");
+                featureCounterReset();
+            }
+        };
+
+        window.addEventListener('scroll', onScrollAnimations);
+
+    </script>
+
+</body>
+</html>

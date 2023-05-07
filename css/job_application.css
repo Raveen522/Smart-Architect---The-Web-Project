@@ -1,0 +1,125 @@
+.section-application{
+    width: 100%;
+    height: 1300px;
+    position: relative;
+}
+.section-application .container h1{
+    margin-top: 80px;
+}
+
+h1 span{
+    font-family: 'Astronova';
+}
+.section-application .container .application-info{
+    width: 700px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+.application{
+    position: relative;
+    width: 750px;
+    height: 950px;
+    background: var(--secondary-color);
+    border: var(--primary-color) solid 3px;
+    text-align: center;
+}
+.application form{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+hr{
+    width: 80%;
+    margin-bottom: 25px;
+}
+.col-photo{
+    position: relative;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.col-photo .photo-title{
+    width: 160px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 0 5px 0;
+}
+.col-photo img{
+    width: 150px;
+    height: 200px;
+    margin: 5px 0 10px 0;
+    object-fit: contain;
+    background: white;
+    border: var(--primary-color) solid ;
+    box-shadow: 2px 2px 10px black;
+}
+
+.col-photo .photo-hint{
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+}
+
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.input-file-label{
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    font-family: "Gotham";
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: white solid 1.5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.input-file-label:hover {
+    background: white;
+    color: black;
+    border: black solid 1.5px;
+}
+
+.col-form{
+    width: 450px;
+    height: 800px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-form input[type=text],.col-form input[type=email],.col-form textarea{
+    width: 400px;   
+    margin-bottom: 20px; 
+}
+
+.col-form #candidate-qualifications, .col-form #candidate-description {
+    height: 200px;
+}
+
+.input-group{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-group #zip-code,#country,#tp-num,#home-tp-num{
+    width: 180px;
+}
