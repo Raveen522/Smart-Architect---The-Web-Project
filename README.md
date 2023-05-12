@@ -41,6 +41,6 @@ The Smart Architect* website is a web application designed to showcase the archi
 - Here is a live demonstration - https://smartarchitect.netlify.app/
 ## Contact
 
-For any inquiries or support, please contact Raveen Malitha -  ravinmalitha50@gmail.com 
+For any inquiries or support, please contact Raveen Malitha (Me) -  ravinmalitha50@gmail.com 
 
 *The name Smart Architect is not a actual company name. I used that for only this project. 
