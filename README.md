@@ -23,20 +23,10 @@ The Smart Architect* website is a web application designed to showcase the archi
 
 
 ## Screenshots
-- Home page
-![Home Page](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/89b53a67-9f86-4366-8e33-85473b6091a9)
+- Preview
+- ![Smart Architect Website](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/ccdce57d-21c0-47b5-b546-1c95b48e254e)
 
-- Service Page
-![Services](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/bf44317a-2765-4800-98d7-e32787627636)
 
-- About Us Page
-![About](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/28966924-d137-4fcb-bf43-6d742bdbbfe7)
-
-- Project Page
-![Projects](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/53aac39a-a008-4836-9440-e977f20be9e2)
-
-- Contact Page
-![Contact](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/3cab967a-26c2-4bd8-8502-e5c8400e3165)
 
 - Here is a live demonstration - https://smartarchitect.netlify.app/
 ## Contact
