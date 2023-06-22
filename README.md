@@ -23,7 +23,6 @@ The Smart Architect* website is a web application designed to showcase the archi
 
 
 ## Screenshots
-- Preview
  ![Smart Architect Website](https://github.com/Raveen522/Smart-Architect---The-Web-Project/assets/89937137/ccdce57d-21c0-47b5-b546-1c95b48e254e)
 
 
